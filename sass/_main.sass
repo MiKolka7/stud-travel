@@ -1,0 +1,440 @@
+body
+    min-width: 1032px
+
+.header
+    padding-top: 63px
+    background:
+        image: url(../pic/bg-header.jpg)
+        size: cover
+
+    &__top
+        max-width: 910px
+        margin: 0 auto
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        text-shadow: 1.8px -2.4px 6.4px rgba(0, 48, 96, 0.8)
+        color: #fbfdfd
+        font-family: Helvetica
+        font-size: 22px
+        font-weight: 400
+
+    &__soc,
+    &__logo,
+    &__tel
+        display: inline-block
+        vertical-align: middle
+
+    &__soc
+        width: 100 / 910 * 200%
+        //margin: -20px 100 / 910 * 129% 0 0
+
+        .link-mail
+            display: block
+            margin-bottom: 15px
+            color: #fafcfc
+            font-family: "Helvetica Neue Cyr"
+
+    &__logo
+        width: 100 / 910 * 259%
+
+    &__tel
+        width: 100 / 910 * 189%
+        //margin-left: 100 / 910 * 132%
+
+        .link-tel
+            display: block
+            margin-bottom: 18px
+
+    &__menu
+        max-width: 1034px
+        margin: 32px auto 0
+
+        &:before
+            content: ''
+            display: block
+            border-top: 1px solid #fefefe
+            box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.35), 1.8px -2.4px 7px rgba(0, 0, 0, 0.8)
+
+        &__link
+            margin: 0 33px
+            padding: 14px 0 20px
+            display: inline-block
+            text-shadow: 1.8px -2.4px 6.4px rgba(0, 48, 96, 0.8)
+            text-transform: uppercase
+            color: white
+            font-family: "Helvetica Neue Cyr"
+            font-size: 23px
+            font-weight: 400
+            
+            &:hover
+                text-decoration: underline
+
+
+.link-soc
+    width: 29px
+    height: 29px
+    display: inline-block
+    background-size: cover
+
+    &:hover
+        opacity: 0.7
+
+.icon-fb
+    background-image: url(../pic/fb.png)
+.icon-in
+    background-image: url(../pic/instagram.png)
+.icon-vk
+    background-image: url(../pic/vk.png)
+
+
+
+
+
+.tour
+    $w: 100 / 1580
+    $h: 100 / 628
+
+    &__header
+        position: relative
+
+    &__img
+
+    &__title
+        position: absolute
+        z-index: 1
+        color: #eacf50
+        text-shadow: 2.4px -3.2px 9.6px #633
+        font-family: "Avant Garde Gothic C"
+        font-weight: 300
+        font-size: 125px
+
+        &--lviv
+            bottom: $h * 43%
+            right: $w * 180%
+
+        &--usa
+            top: $h * 114%
+            right: $w * 150%
+            font-size: 112px
+            line-height: 0.9
+
+        &--evro
+            top: $h * 57%
+            right: $w * 172%
+            font-family: Helvetica
+            font-size: 49px
+
+            span
+                display: inline-block
+                vertical-align: middle
+
+            .tour__title-big
+                color: #fbfbfb
+                font-family: "Hanzi Pen S C"
+                font-size: 125px
+
+        &--pylypets
+            top: $h * 70%
+            left: $w * 68%
+
+        &--buka
+            bottom: $h * 45%
+            right: $w * 211%
+
+        &--bucovina
+            top: $h * 54%
+            left: $w * 51%
+
+        &--goverla
+            top: 50%
+            right: $w * 41%
+            transform: translate(0, -50%)
+
+    &__info
+        height: 65px
+        margin-bottom: 50px
+        color: #633
+        text-align: center
+        font-family: "Helvetica Neue Cyr"
+        font-size: 20px
+        font-weight: 400
+        line-height: 65px
+        background-color: #b2ecf8
+
+        &__separate
+            width: 35%
+            display: inline-block
+
+    &__content
+        max-width: 1022px
+        margin: 0 auto
+        color: #633
+        font-size: 22px
+
+        .title
+            margin-bottom: 32px
+            text-transform: uppercase
+
+        .step
+            margin-bottom: 5px
+            color: #1086a5
+            font-size: 22px
+
+        p
+            margin-bottom: 25px
+
+        .photos
+            margin: 0 -4% 20px
+            font-size: 0
+
+            img
+                width: 30%
+                margin: 0 1.5%
+                vertical-align: top
+                box-shadow: 0 -1px 9px 0px #000
+
+    &__reg
+        max-width: 1022px
+        margin: 0 auto
+        padding: 91px 0 109px
+
+        img
+            width: 100 / 1022 * 518%
+            vertical-align: middle
+
+        a
+            @extend .animate
+            width: 100 / 1022 * 349%
+            margin-left: 100 / 1022 * 83%
+            text-align: center
+            line-height: 56px
+            display: inline-block
+            vertical-align: middle
+            background-color: #50cbea
+            box-shadow: 1.8px -2.4px 4px rgba(35, 31, 32, 0.3)
+
+            &:hover
+                background-color: darken(#50cbea, 10)
+
+.about
+    $aboutW: 1047
+    margin: 109px 0 89px
+
+    &__in
+        max-width: $aboutW + 0px
+        margin: 0 auto
+        font-size: 0
+
+    &__img
+        width: 100 / $aboutW * 406%
+        box-sizing: border-box
+        padding-right: 100 / $aboutW * 34%
+        display: inline-block
+        vertical-align: middle
+
+        @media screen and (max-width: 768px)
+            margin-bottom: 20px
+            width: 100%
+
+    &__text
+        width: 100 / $aboutW * 598%
+        display: inline-block
+        vertical-align: middle
+        box-sizing: border-box
+        padding: 0 25px
+        color: #000
+        font-size: 14px
+        line-height: 18px
+        font-weight: 400
+
+        @media screen and (max-width: 768px)
+            width: 100%
+
+
+
+
+
+.photo
+    padding: 94px 20px 73px
+    margin-bottom: 21px
+    background:
+        image: url(../pic/bg-photo.jpg)
+        size: cover
+
+    &__in
+        max-width: 1451px
+        margin: 0 auto
+
+    &__item
+
+    &__title
+        margin-top: 22px
+        text-align: center
+        color: #003060
+        font-family: "Hitch Hike"
+        font-size: 27px
+        font-weight: 400
+        line-height: 47px
+
+
+
+
+.owl-carousel
+    .owl-nav
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        pointer-events: none
+
+    &.photo-list
+        .owl-nav
+            margin-top: -70px
+
+    .owl-prev,
+    .owl-next
+        @extend .animate-fast
+        position: absolute
+        top: 50%
+        width: 48px
+        height: 49px
+        margin-top: -24px
+        box-sizing: border-box
+        background:
+            color: white
+            repeat: no-repeat
+            position: 50% 50%
+        border: 3px solid #d9edf1
+        border-radius: 100%
+        font-size: 0
+        pointer-events: all
+
+        &:hover
+            border-width: 9px
+
+        &:active
+            transform: scale(0.9)
+
+    .owl-prev
+        left: -24px
+        background-image: url(../pic/prev.png)
+
+    .owl-next
+        right: -24px
+        background-image: url(../pic/next.png)
+
+
+
+
+.video
+    padding: 88px 0 94px
+    background:
+        image: url(../pic/bg-video.jpg)
+
+    &__in
+        max-width: 1214px
+        margin: 0 auto
+
+    &__item
+
+        &:before
+            @extend .animate-fast
+            content: ''
+            position: absolute
+            top: 50%
+            left: 0
+            right: 0
+            width: 85px
+            height: 85px
+            margin: -42px auto 0
+            background: url(../pic/play.png)
+
+        &:hover
+            cursor: pointer
+            &:before
+                transform: scale(1.2)
+
+
+
+
+.comment
+    padding: 68px 0
+
+    &__in
+        position: relative
+        width: 1038px
+        margin: 0 auto
+
+    &-list
+
+    &__item
+        padding-right: 100 / 1038 * 50%
+        margin-bottom: 50px
+        color: #633
+        font-family: "Helvetica Neue Cyr"
+        font-size: 0
+        font-weight: 300
+
+        &__photo
+            width: 100 / 1038 * 118%
+            margin-right: 100 / 1038 * 45%
+            display: inline-block
+            vertical-align: middle
+
+        &__text
+            width: 100 / 1038 * 825%
+            display: inline-block
+            vertical-align: middle
+            font-size: 20px
+
+        &__name
+            margin-bottom: 5px
+            font-size: 20px
+            font-weight: 400
+
+
+.btn-top
+    @extend .animate
+    position: absolute
+    bottom: -17px
+    right: 0
+    width: 78px
+    height: 119px
+    box-sizing: content-box
+    background:
+        image: url(../pic/btn-top.png)
+        repeat: no-repeat
+        position: 0 50%
+
+    &:hover
+        padding-bottom: 20px
+
+
+.footer
+    padding: 91px 0 67px
+    background: 
+        image: url(../pic/bg-footer.jpg)
+        size: cover
+
+    &__in
+        max-width: 936px
+        margin: 0 auto
+
+    &__logo
+        width: 152px
+        display: inline-block
+        vertical-align: middle
+
+    &__text
+        margin-left: 100 / 936 * 116%
+        display: inline-block
+        vertical-align: middle
+        text-shadow: 1.2px -1.6px 1px rgba(3, 3, 10, 0.8)
+        color: #fafcfd
+        font-family: "Helvetica Neue Cyr"
+        font-size: 18px
+        font-weight: 300

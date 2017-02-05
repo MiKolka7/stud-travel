@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300italic&subset=latin,cyrillic-ext)
+
+=font-face($family, $path, $svg, $weight: normal, $style: normal)
+    @font-face
+        font-family: $family
+        src: url('#{$path}.eot')
+        src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg')
+        font-weight: $weight
+        font-style: $style
+
+
++font-face('Hitch Hike', '../fonts/Hitch-Hike/Hitch-Hike', 'HitchHike')
++font-face('Helvetica Neue Cyr', '../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold', 'HelveticaNeueCyrBold', 700, 'normal')
++font-face('Helvetica Neue Cyr', '../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light', 'HelveticaNeueCyrLight', 300, 'normal')
++font-face('Helvetica Neue Cyr', '../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium', 'HelveticaNeueCyrMedium', 400, 'normal')
++font-face('Helvetica Neue Cyr', '../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman', 'HelveticaNeueCyrRoman', 'normal', 'normal')
++font-face('Helvetica', '../fonts/Helvetica-Regular/Helvetica-Regular', 'HelveticaRegular', 'normal', 'normal')
++font-face('Helvetica', '../fonts/Helvetica-Bold/Helvetica-Bold', 'HelveticaBold', 700, 'normal')
++font-face('Avant Garde Gothic C', '../fonts/avantgardegothicc/avantgardegothicc', 'avantgardegothicc', 'normal', 'normal')
+//
+//
+//$BaseFont: 'texgyreheros-regular'
+//$BaseFont-italic: 'texgyreheros-italic'
+//$BaseFont-bold: 'texgyreheros-bold'
